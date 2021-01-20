@@ -23,6 +23,10 @@
 
 `youtube-dl -f bestvideo+bestaudio '{{url}}'`
 
+- Batch download video(s) from a file containing URL(s) (one per line):
+
+`youtube-dl -a '{{file}}'`
+
 - Download video(s) as MP4 files with custom filenames:
 
 `youtube-dl --format {{mp4}} -o "{{%(title)s by %(uploader)s on %(upload_date)s in %(playlist)s.%(ext)s}}" '{{url}}'`
